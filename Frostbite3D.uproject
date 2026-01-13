@@ -1,0 +1,20 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.6",
+	"Category": "",
+	"Description": "Frostbite 3D - A classic ice block game reimagined in 3D",
+	"Modules": [
+		{
+			"Name": "Frostbite3D",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [],
+	"TargetPlatforms": [
+		"Windows"
+	]
+}
