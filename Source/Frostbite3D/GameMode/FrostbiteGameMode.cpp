@@ -1,4 +1,4 @@
-// Copyright (c) 2026 Frostbite 3D Team. Todos os direitos reservados.
+// Copyright (c) 2025 Frostbite 3D Team. Todos os direitos reservados.
 
 #include "FrostbiteGameMode.h"
 #include "Kismet/GameplayStatics.h"
