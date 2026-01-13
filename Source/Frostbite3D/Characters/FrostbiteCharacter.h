@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "../Frostbite3DTypes.h"
 #include "FrostbiteCharacter.generated.h"
 
 // Forward declarations
@@ -12,34 +13,6 @@ class UCameraComponent;
 class UInputMappingContext;
 class UInputAction;
 struct FInputActionValue;
-
-/**
- * Coordenada de um tile na grade
- */
-USTRUCT(BlueprintType)
-struct FTileCoord
-{
-	GENERATED_BODY()
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int32 X = 0;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int32 Y = 0;
-
-	FTileCoord() : X(0), Y(0) {}
-	FTileCoord(int32 InX, int32 InY) : X(InX), Y(InY) {}
-
-	bool operator==(const FTileCoord& Other) const
-	{
-		return X == Other.X && Y == Other.Y;
-	}
-
-	bool operator!=(const FTileCoord& Other) const
-	{
-		return !(*this == Other);
-	}
-};
 
 /**
  * Character principal do jogador no Frostbite 3D

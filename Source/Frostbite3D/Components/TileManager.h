@@ -4,23 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "../Frostbite3DTypes.h"
 #include "TileManager.generated.h"
-
-// Forward declaration
-struct FTileCoord;
-
-/**
- * Estados possíveis de um tile
- */
-UENUM(BlueprintType)
-enum class ETileState : uint8
-{
-	Intact UMETA(DisplayName = "Intacto"),
-	Cracked UMETA(DisplayName = "Rachado"),
-	Broken UMETA(DisplayName = "Quebrado"),
-	Frozen UMETA(DisplayName = "Congelado"),
-	Occupied UMETA(DisplayName = "Ocupado")
-};
 
 /**
  * Estrutura que representa informações de um tile individual

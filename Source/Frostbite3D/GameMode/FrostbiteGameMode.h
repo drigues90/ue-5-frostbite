@@ -4,20 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "../Frostbite3DTypes.h"
 #include "FrostbiteGameMode.generated.h"
-
-/**
- * Estados possíveis do jogo
- */
-UENUM(BlueprintType)
-enum class EFrostbiteGameState : uint8
-{
-	Initializing UMETA(DisplayName = "Inicializando"),
-	Running UMETA(DisplayName = "Em Execução"),
-	Paused UMETA(DisplayName = "Pausado"),
-	Won UMETA(DisplayName = "Vitória"),
-	Lost UMETA(DisplayName = "Derrota")
-};
 
 /**
  * GameMode principal do Frostbite 3D

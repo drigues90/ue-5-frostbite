@@ -2,7 +2,6 @@
 
 #include "TileManager.h"
 #include "Components/HierarchicalInstancedStaticMeshComponent.h"
-#include "../Characters/FrostbiteCharacter.h"
 
 UTileManager::UTileManager()
 {
