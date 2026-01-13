@@ -11,7 +11,7 @@
  * Estrutura que representa informações de um tile individual
  */
 USTRUCT(BlueprintType)
-struct FTileInfo
+struct FROSTBITE3D_API FTileInfo
 {
 	GENERATED_BODY()
 

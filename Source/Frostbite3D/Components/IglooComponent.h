@@ -10,7 +10,7 @@
  * Informações sobre um local de construção do iglu
  */
 USTRUCT(BlueprintType)
-struct FIglooBuildSite
+struct FROSTBITE3D_API FIglooBuildSite
 {
 	GENERATED_BODY()
 
