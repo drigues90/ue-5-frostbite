@@ -133,6 +133,7 @@ void UIglooComponent::GenerateBuildSites()
 		FIglooBuildSite NewSite;
 		
 		// Calcular posição em círculo
+		// AngleStep está em graus, convertemos para radianos para usar com Sin/Cos
 		float Angle = FMath::DegreesToRadians(AngleStep * i);
 		FVector Offset;
 		Offset.X = FMath::Cos(Angle) * BuildSiteRadius;

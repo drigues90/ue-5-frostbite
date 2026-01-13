@@ -392,6 +392,13 @@ void UTileManager::SpawnPickupAtLocation(const FVector& Location)
 
 int32 UTileManager::CoordToIndex(const FTileCoord& Coord) const
 {
+	// Validação básica para evitar acesso fora dos limites
+	if (!IsValidCoord(Coord))
+	{
+		UE_LOG(LogTemp, Error, TEXT("TileManager: CoordToIndex chamado com coordenada inválida (%d, %d)"), Coord.X, Coord.Y);
+		return 0; // Retorna índice seguro
+	}
+	
 	return Coord.Y * GridSizeX + Coord.X;
 }
 
